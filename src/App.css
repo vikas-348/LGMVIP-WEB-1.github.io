@@ -1,0 +1,154 @@
+*{
+   box-sizing: border-box;
+   padding: 0%;
+   margin: 0%;
+  }
+  .bgimg{
+    background: url(../src/Componet/Images/books.jpg) no-repeat center center/ cover;
+    height:100vh;
+    width: 100%;
+  }
+  .header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+/*************************/
+.custom-input{
+   padding-top: 10px;
+}
+input{
+ width:310px;
+ height: 30px;
+ text-align: center;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ font-weight:bold;
+ outline: none;
+ border: none;
+ border-bottom: 3px solid green;
+}
+
+.btn-icon{
+ font-size:2rem;
+ background-color: white;
+ border: none;
+ outline: none;
+
+}
+.add-icon{
+    background-color: white;
+    color: rgb(121, 202, 0);
+}
+ .add-icon:hover{
+       color: red;
+       border: 2px solid red;
+       border-radius: 50%;      
+ }
+  /* when you enter into the field text wont appear*/
+  input:focus::placeholder{
+    color: transparent;
+  }
+
+  input::placeholder{
+    color:rgb(45, 0, 248);
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  /*************stroing data feild****************/
+  ol{
+    padding:10px;
+
+  }
+
+  ol li{
+        list-style: none;
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight:bold;      
+  }
+  ol,ul,dl{
+    margin-bottom: 1px;
+  }
+  .todo_style{
+    border: 2px solid rgb(201, 172, 11);
+    background-color: rgb(255, 221, 255);
+  
+      }
+  .todo_style:hover{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid red;
+  }
+  
+  .todo_style{
+    animation: fadeIn linear 0.4s;
+    -webkit-animation: fadeIn linear 0.4s;
+    -moz-animation: fadeIn linear 0.4s;
+    -o-animation: fadeIn linear 0.4s;
+    -ms-animation: fadeIn linear 0.4s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  .to-do{
+    width: 350px;
+    height: 60vh;
+    border: 3px solid green;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 5px 8px 8px #aaaaaa;
+    overflow-y: auto;
+
+ }
+ /****************delete icon************************/
+ .fas{
+        font-size: 20px;
+        color: rgb(121, 202, 0);
+        font-weight: bold;
+  }
+
+  span{
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 8px;
+  
+   }
+   .fas-icon:hover{
+    color: red;
+   }
+  /**************edit-icon***********/
+  .edit-icon{
+    color: rgb(121, 202, 0);
+    font-weight: bold;
+  }
+  .edit-icon:hover{
+    color: rgb(184, 0, 0);
+  }
+  .edit-icon-add{
+    font-size:1.5rem;
+    margin: 5px;
+    color: rgb(121, 202, 0);
+  }
+  .edit-icon-add:hover{
+    color: red;
+  }
